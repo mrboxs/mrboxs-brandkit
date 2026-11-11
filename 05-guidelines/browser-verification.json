@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "browser": "Chromium 155.0.8059.84 Arch Linux",
+  "runs": [
+    {
+      "status": "PASS",
+      "osTheme": "light",
+      "checks": [
+        "Initial OS theme",
+        "dark: CSS foreground",
+        "dark: light artwork visibility",
+        "dark: dark artwork visibility",
+        "dark: favicon URL",
+        "dark: browser chrome",
+        "dark: browser chrome",
+        "light: CSS foreground",
+        "light: light artwork visibility",
+        "light: dark artwork visibility",
+        "light: favicon URL",
+        "light: browser chrome",
+        "light: browser chrome",
+        "system: CSS foreground",
+        "system: light artwork visibility",
+        "system: dark artwork visibility",
+        "system: favicon URL",
+        "Restored media query",
+        "Restored media query",
+        "Adaptive SVG surface matches OS theme",
+        "Adaptive SVG rendered opaque tile"
+      ]
+    },
+    {
+      "status": "PASS",
+      "osTheme": "dark",
+      "checks": [
+        "Initial OS theme",
+        "dark: CSS foreground",
+        "dark: light artwork visibility",
+        "dark: dark artwork visibility",
+        "dark: favicon URL",
+        "dark: browser chrome",
+        "dark: browser chrome",
+        "light: CSS foreground",
+        "light: light artwork visibility",
+        "light: dark artwork visibility",
+        "light: favicon URL",
+        "light: browser chrome",
+        "light: browser chrome",
+        "system: CSS foreground",
+        "system: light artwork visibility",
+        "system: dark artwork visibility",
+        "system: favicon URL",
+        "Restored media query",
+        "Restored media query",
+        "Adaptive SVG surface matches OS theme",
+        "Adaptive SVG rendered opaque tile"
+      ]
+    }
+  ]
+}

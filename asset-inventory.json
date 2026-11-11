@@ -1,0 +1,914 @@
+{
+  "brand": "mrboxs",
+  "version": "1.0.0",
+  "assets": [
+    {
+      "path": ".gitattributes",
+      "bytes": 259
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 52
+    },
+    {
+      "path": "00-source/mrboxs-logo-original.svg",
+      "bytes": 1108
+    },
+    {
+      "path": "01-logos/adaptive/mrboxs-horizontal-auto.svg",
+      "bytes": 10270
+    },
+    {
+      "path": "01-logos/adaptive/mrboxs-symbol-auto.svg",
+      "bytes": 820
+    },
+    {
+      "path": "01-logos/adaptive/mrboxs-wordmark-auto.svg",
+      "bytes": 9648
+    },
+    {
+      "path": "01-logos/dark/mrboxs-badge-1024.png",
+      "bytes": 46122
+    },
+    {
+      "path": "01-logos/dark/mrboxs-badge-256.png",
+      "bytes": 7590
+    },
+    {
+      "path": "01-logos/dark/mrboxs-badge-512.png",
+      "bytes": 18346
+    },
+    {
+      "path": "01-logos/dark/mrboxs-badge.svg",
+      "bytes": 776
+    },
+    {
+      "path": "01-logos/dark/mrboxs-horizontal-1024.png",
+      "bytes": 21263
+    },
+    {
+      "path": "01-logos/dark/mrboxs-horizontal-2048.png",
+      "bytes": 47409
+    },
+    {
+      "path": "01-logos/dark/mrboxs-horizontal-512.png",
+      "bytes": 9386
+    },
+    {
+      "path": "01-logos/dark/mrboxs-horizontal.svg",
+      "bytes": 10195
+    },
+    {
+      "path": "01-logos/dark/mrboxs-stacked-1024.png",
+      "bytes": 52304
+    },
+    {
+      "path": "01-logos/dark/mrboxs-stacked-256.png",
+      "bytes": 9547
+    },
+    {
+      "path": "01-logos/dark/mrboxs-stacked-512.png",
+      "bytes": 22412
+    },
+    {
+      "path": "01-logos/dark/mrboxs-stacked.svg",
+      "bytes": 10193
+    },
+    {
+      "path": "01-logos/dark/mrboxs-symbol-1024.png",
+      "bytes": 33978
+    },
+    {
+      "path": "01-logos/dark/mrboxs-symbol-256.png",
+      "bytes": 5824
+    },
+    {
+      "path": "01-logos/dark/mrboxs-symbol-512.png",
+      "bytes": 14412
+    },
+    {
+      "path": "01-logos/dark/mrboxs-symbol-small-16.png",
+      "bytes": 373
+    },
+    {
+      "path": "01-logos/dark/mrboxs-symbol-small-24.png",
+      "bytes": 569
+    },
+    {
+      "path": "01-logos/dark/mrboxs-symbol-small-32.png",
+      "bytes": 718
+    },
+    {
+      "path": "01-logos/dark/mrboxs-symbol-small-48.png",
+      "bytes": 1109
+    },
+    {
+      "path": "01-logos/dark/mrboxs-symbol-small-64.png",
+      "bytes": 1349
+    },
+    {
+      "path": "01-logos/dark/mrboxs-symbol-small.svg",
+      "bytes": 656
+    },
+    {
+      "path": "01-logos/dark/mrboxs-symbol.svg",
+      "bytes": 746
+    },
+    {
+      "path": "01-logos/dark/mrboxs-wordmark-1024.png",
+      "bytes": 19915
+    },
+    {
+      "path": "01-logos/dark/mrboxs-wordmark-2048.png",
+      "bytes": 42960
+    },
+    {
+      "path": "01-logos/dark/mrboxs-wordmark-512.png",
+      "bytes": 9154
+    },
+    {
+      "path": "01-logos/dark/mrboxs-wordmark.svg",
+      "bytes": 9576
+    },
+    {
+      "path": "01-logos/inline/mrboxs-horizontal-currentcolor.svg",
+      "bytes": 10186
+    },
+    {
+      "path": "01-logos/inline/mrboxs-symbol-currentcolor.svg",
+      "bytes": 736
+    },
+    {
+      "path": "01-logos/inline/mrboxs-wordmark-currentcolor.svg",
+      "bytes": 9564
+    },
+    {
+      "path": "01-logos/light/mrboxs-badge-1024.png",
+      "bytes": 47170
+    },
+    {
+      "path": "01-logos/light/mrboxs-badge-256.png",
+      "bytes": 7652
+    },
+    {
+      "path": "01-logos/light/mrboxs-badge-512.png",
+      "bytes": 20078
+    },
+    {
+      "path": "01-logos/light/mrboxs-badge.svg",
+      "bytes": 777
+    },
+    {
+      "path": "01-logos/light/mrboxs-horizontal-1024.png",
+      "bytes": 18314
+    },
+    {
+      "path": "01-logos/light/mrboxs-horizontal-2048.png",
+      "bytes": 41099
+    },
+    {
+      "path": "01-logos/light/mrboxs-horizontal-512.png",
+      "bytes": 8339
+    },
+    {
+      "path": "01-logos/light/mrboxs-horizontal.svg",
+      "bytes": 10196
+    },
+    {
+      "path": "01-logos/light/mrboxs-stacked-1024.png",
+      "bytes": 44314
+    },
+    {
+      "path": "01-logos/light/mrboxs-stacked-256.png",
+      "bytes": 8458
+    },
+    {
+      "path": "01-logos/light/mrboxs-stacked-512.png",
+      "bytes": 19082
+    },
+    {
+      "path": "01-logos/light/mrboxs-stacked.svg",
+      "bytes": 10194
+    },
+    {
+      "path": "01-logos/light/mrboxs-symbol-1024.png",
+      "bytes": 27273
+    },
+    {
+      "path": "01-logos/light/mrboxs-symbol-256.png",
+      "bytes": 5097
+    },
+    {
+      "path": "01-logos/light/mrboxs-symbol-512.png",
+      "bytes": 11675
+    },
+    {
+      "path": "01-logos/light/mrboxs-symbol-small-16.png",
+      "bytes": 342
+    },
+    {
+      "path": "01-logos/light/mrboxs-symbol-small-24.png",
+      "bytes": 524
+    },
+    {
+      "path": "01-logos/light/mrboxs-symbol-small-32.png",
+      "bytes": 670
+    },
+    {
+      "path": "01-logos/light/mrboxs-symbol-small-48.png",
+      "bytes": 1018
+    },
+    {
+      "path": "01-logos/light/mrboxs-symbol-small-64.png",
+      "bytes": 1250
+    },
+    {
+      "path": "01-logos/light/mrboxs-symbol-small.svg",
+      "bytes": 657
+    },
+    {
+      "path": "01-logos/light/mrboxs-symbol.svg",
+      "bytes": 747
+    },
+    {
+      "path": "01-logos/light/mrboxs-wordmark-1024.png",
+      "bytes": 17736
+    },
+    {
+      "path": "01-logos/light/mrboxs-wordmark-2048.png",
+      "bytes": 38548
+    },
+    {
+      "path": "01-logos/light/mrboxs-wordmark-512.png",
+      "bytes": 7931
+    },
+    {
+      "path": "01-logos/light/mrboxs-wordmark.svg",
+      "bytes": 9577
+    },
+    {
+      "path": "01-logos/logo-snippet.html",
+      "bytes": 458
+    },
+    {
+      "path": "02-icons/app/android/res/drawable/ic_launcher_foreground.xml",
+      "bytes": 1069
+    },
+    {
+      "path": "02-icons/app/android/res/drawable/ic_launcher_monochrome.xml",
+      "bytes": 1014
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "bytes": 210
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "bytes": 210
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-anydpi-v33/ic_launcher.xml",
+      "bytes": 275
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-anydpi-v33/ic_launcher_round.xml",
+      "bytes": 275
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-hdpi/ic_launcher.png",
+      "bytes": 1818
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-hdpi/ic_launcher_round.png",
+      "bytes": 2283
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-mdpi/ic_launcher.png",
+      "bytes": 1236
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-mdpi/ic_launcher_round.png",
+      "bytes": 1503
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-night-hdpi/ic_launcher.png",
+      "bytes": 1723
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-night-hdpi/ic_launcher_round.png",
+      "bytes": 2214
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-night-mdpi/ic_launcher.png",
+      "bytes": 1199
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-night-mdpi/ic_launcher_round.png",
+      "bytes": 1473
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-night-xhdpi/ic_launcher.png",
+      "bytes": 2168
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-night-xhdpi/ic_launcher_round.png",
+      "bytes": 2782
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-night-xxhdpi/ic_launcher.png",
+      "bytes": 3167
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-night-xxhdpi/ic_launcher_round.png",
+      "bytes": 4283
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-night-xxxhdpi/ic_launcher.png",
+      "bytes": 4166
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-night-xxxhdpi/ic_launcher_round.png",
+      "bytes": 5696
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-xhdpi/ic_launcher.png",
+      "bytes": 2268
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-xhdpi/ic_launcher_round.png",
+      "bytes": 2866
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-xxhdpi/ic_launcher.png",
+      "bytes": 3478
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-xxhdpi/ic_launcher_round.png",
+      "bytes": 4407
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-xxxhdpi/ic_launcher.png",
+      "bytes": 4506
+    },
+    {
+      "path": "02-icons/app/android/res/mipmap-xxxhdpi/ic_launcher_round.png",
+      "bytes": 5857
+    },
+    {
+      "path": "02-icons/app/android/res/values/colors.xml",
+      "bytes": 109
+    },
+    {
+      "path": "02-icons/app/android/res/values-night/colors.xml",
+      "bytes": 109
+    },
+    {
+      "path": "02-icons/app/dark/mrboxs-app-rounded-1024.png",
+      "bytes": 46905
+    },
+    {
+      "path": "02-icons/app/dark/mrboxs-app-rounded-128.png",
+      "bytes": 3969
+    },
+    {
+      "path": "02-icons/app/dark/mrboxs-app-rounded-256.png",
+      "bytes": 7791
+    },
+    {
+      "path": "02-icons/app/dark/mrboxs-app-rounded-512.png",
+      "bytes": 18978
+    },
+    {
+      "path": "02-icons/app/dark/mrboxs-app-rounded-64.png",
+      "bytes": 2166
+    },
+    {
+      "path": "02-icons/app/dark/mrboxs-app-rounded.svg",
+      "bytes": 823
+    },
+    {
+      "path": "02-icons/app/dark/mrboxs-app-square-1024.png",
+      "bytes": 30003
+    },
+    {
+      "path": "02-icons/app/dark/mrboxs-app-square-128.png",
+      "bytes": 2774
+    },
+    {
+      "path": "02-icons/app/dark/mrboxs-app-square-256.png",
+      "bytes": 5253
+    },
+    {
+      "path": "02-icons/app/dark/mrboxs-app-square-512.png",
+      "bytes": 12222
+    },
+    {
+      "path": "02-icons/app/dark/mrboxs-app-square-64.png",
+      "bytes": 1637
+    },
+    {
+      "path": "02-icons/app/dark/mrboxs-app-square.svg",
+      "bytes": 821
+    },
+    {
+      "path": "02-icons/app/dark/mrboxs-macos.icns",
+      "bytes": 116737
+    },
+    {
+      "path": "02-icons/app/dark/mrboxs-windows.ico",
+      "bytes": 25754
+    },
+    {
+      "path": "02-icons/app/ios/dark/AppIcon.appiconset/Contents.json",
+      "bytes": 2134
+    },
+    {
+      "path": "02-icons/app/ios/dark/AppIcon.appiconset/icon-1024.png",
+      "bytes": 30161
+    },
+    {
+      "path": "02-icons/app/ios/dark/AppIcon.appiconset/icon-120.png",
+      "bytes": 4244
+    },
+    {
+      "path": "02-icons/app/ios/dark/AppIcon.appiconset/icon-152.png",
+      "bytes": 5007
+    },
+    {
+      "path": "02-icons/app/ios/dark/AppIcon.appiconset/icon-167.png",
+      "bytes": 5645
+    },
+    {
+      "path": "02-icons/app/ios/dark/AppIcon.appiconset/icon-180.png",
+      "bytes": 6191
+    },
+    {
+      "path": "02-icons/app/ios/dark/AppIcon.appiconset/icon-20.png",
+      "bytes": 594
+    },
+    {
+      "path": "02-icons/app/ios/dark/AppIcon.appiconset/icon-29.png",
+      "bytes": 868
+    },
+    {
+      "path": "02-icons/app/ios/dark/AppIcon.appiconset/icon-40.png",
+      "bytes": 1302
+    },
+    {
+      "path": "02-icons/app/ios/dark/AppIcon.appiconset/icon-58.png",
+      "bytes": 1975
+    },
+    {
+      "path": "02-icons/app/ios/dark/AppIcon.appiconset/icon-60.png",
+      "bytes": 2049
+    },
+    {
+      "path": "02-icons/app/ios/dark/AppIcon.appiconset/icon-76.png",
+      "bytes": 2525
+    },
+    {
+      "path": "02-icons/app/ios/dark/AppIcon.appiconset/icon-80.png",
+      "bytes": 2772
+    },
+    {
+      "path": "02-icons/app/ios/dark/AppIcon.appiconset/icon-87.png",
+      "bytes": 3097
+    },
+    {
+      "path": "02-icons/app/ios/light/AppIcon.appiconset/Contents.json",
+      "bytes": 2134
+    },
+    {
+      "path": "02-icons/app/ios/light/AppIcon.appiconset/icon-1024.png",
+      "bytes": 36115
+    },
+    {
+      "path": "02-icons/app/ios/light/AppIcon.appiconset/icon-120.png",
+      "bytes": 4485
+    },
+    {
+      "path": "02-icons/app/ios/light/AppIcon.appiconset/icon-152.png",
+      "bytes": 5403
+    },
+    {
+      "path": "02-icons/app/ios/light/AppIcon.appiconset/icon-167.png",
+      "bytes": 5994
+    },
+    {
+      "path": "02-icons/app/ios/light/AppIcon.appiconset/icon-180.png",
+      "bytes": 6484
+    },
+    {
+      "path": "02-icons/app/ios/light/AppIcon.appiconset/icon-20.png",
+      "bytes": 631
+    },
+    {
+      "path": "02-icons/app/ios/light/AppIcon.appiconset/icon-29.png",
+      "bytes": 936
+    },
+    {
+      "path": "02-icons/app/ios/light/AppIcon.appiconset/icon-40.png",
+      "bytes": 1366
+    },
+    {
+      "path": "02-icons/app/ios/light/AppIcon.appiconset/icon-58.png",
+      "bytes": 2057
+    },
+    {
+      "path": "02-icons/app/ios/light/AppIcon.appiconset/icon-60.png",
+      "bytes": 2108
+    },
+    {
+      "path": "02-icons/app/ios/light/AppIcon.appiconset/icon-76.png",
+      "bytes": 2662
+    },
+    {
+      "path": "02-icons/app/ios/light/AppIcon.appiconset/icon-80.png",
+      "bytes": 2886
+    },
+    {
+      "path": "02-icons/app/ios/light/AppIcon.appiconset/icon-87.png",
+      "bytes": 3310
+    },
+    {
+      "path": "02-icons/app/light/mrboxs-app-rounded-1024.png",
+      "bytes": 47854
+    },
+    {
+      "path": "02-icons/app/light/mrboxs-app-rounded-128.png",
+      "bytes": 4133
+    },
+    {
+      "path": "02-icons/app/light/mrboxs-app-rounded-256.png",
+      "bytes": 8242
+    },
+    {
+      "path": "02-icons/app/light/mrboxs-app-rounded-512.png",
+      "bytes": 20748
+    },
+    {
+      "path": "02-icons/app/light/mrboxs-app-rounded-64.png",
+      "bytes": 2247
+    },
+    {
+      "path": "02-icons/app/light/mrboxs-app-rounded.svg",
+      "bytes": 824
+    },
+    {
+      "path": "02-icons/app/light/mrboxs-app-square-1024.png",
+      "bytes": 36132
+    },
+    {
+      "path": "02-icons/app/light/mrboxs-app-square-128.png",
+      "bytes": 3022
+    },
+    {
+      "path": "02-icons/app/light/mrboxs-app-square-256.png",
+      "bytes": 5767
+    },
+    {
+      "path": "02-icons/app/light/mrboxs-app-square-512.png",
+      "bytes": 13811
+    },
+    {
+      "path": "02-icons/app/light/mrboxs-app-square-64.png",
+      "bytes": 1703
+    },
+    {
+      "path": "02-icons/app/light/mrboxs-app-square.svg",
+      "bytes": 822
+    },
+    {
+      "path": "02-icons/app/light/mrboxs-macos.icns",
+      "bytes": 122136
+    },
+    {
+      "path": "02-icons/app/light/mrboxs-windows.ico",
+      "bytes": 26638
+    },
+    {
+      "path": "02-icons/web/dark/apple-touch-icon.png",
+      "bytes": 3828
+    },
+    {
+      "path": "02-icons/web/dark/apple-touch-icon.svg",
+      "bytes": 821
+    },
+    {
+      "path": "02-icons/web/dark/favicon-16.png",
+      "bytes": 553
+    },
+    {
+      "path": "02-icons/web/dark/favicon-24.png",
+      "bytes": 837
+    },
+    {
+      "path": "02-icons/web/dark/favicon-32.png",
+      "bytes": 1056
+    },
+    {
+      "path": "02-icons/web/dark/favicon-48.png",
+      "bytes": 1902
+    },
+    {
+      "path": "02-icons/web/dark/favicon-64.png",
+      "bytes": 2336
+    },
+    {
+      "path": "02-icons/web/dark/favicon-full.svg",
+      "bytes": 798
+    },
+    {
+      "path": "02-icons/web/dark/favicon-small.svg",
+      "bytes": 707
+    },
+    {
+      "path": "02-icons/web/dark/favicon.ico",
+      "bytes": 3502
+    },
+    {
+      "path": "02-icons/web/dark/favicon.svg",
+      "bytes": 707
+    },
+    {
+      "path": "02-icons/web/dark/icon-192.png",
+      "bytes": 4166
+    },
+    {
+      "path": "02-icons/web/dark/icon-192.svg",
+      "bytes": 813
+    },
+    {
+      "path": "02-icons/web/dark/icon-512.png",
+      "bytes": 12222
+    },
+    {
+      "path": "02-icons/web/dark/icon-512.svg",
+      "bytes": 813
+    },
+    {
+      "path": "02-icons/web/dark/maskable-192.png",
+      "bytes": 3119
+    },
+    {
+      "path": "02-icons/web/dark/maskable-192.svg",
+      "bytes": 817
+    },
+    {
+      "path": "02-icons/web/dark/maskable-512.png",
+      "bytes": 9926
+    },
+    {
+      "path": "02-icons/web/dark/maskable-512.svg",
+      "bytes": 817
+    },
+    {
+      "path": "02-icons/web/dark/site.webmanifest",
+      "bytes": 701
+    },
+    {
+      "path": "02-icons/web/favicon.ico",
+      "bytes": 3502
+    },
+    {
+      "path": "02-icons/web/favicon.svg",
+      "bytes": 825
+    },
+    {
+      "path": "02-icons/web/head-snippet.html",
+      "bytes": 849
+    },
+    {
+      "path": "02-icons/web/light/apple-touch-icon.png",
+      "bytes": 4091
+    },
+    {
+      "path": "02-icons/web/light/apple-touch-icon.svg",
+      "bytes": 821
+    },
+    {
+      "path": "02-icons/web/light/favicon-16.png",
+      "bytes": 547
+    },
+    {
+      "path": "02-icons/web/light/favicon-24.png",
+      "bytes": 869
+    },
+    {
+      "path": "02-icons/web/light/favicon-32.png",
+      "bytes": 1085
+    },
+    {
+      "path": "02-icons/web/light/favicon-48.png",
+      "bytes": 1944
+    },
+    {
+      "path": "02-icons/web/light/favicon-64.png",
+      "bytes": 2426
+    },
+    {
+      "path": "02-icons/web/light/favicon-full.svg",
+      "bytes": 798
+    },
+    {
+      "path": "02-icons/web/light/favicon-small.svg",
+      "bytes": 707
+    },
+    {
+      "path": "02-icons/web/light/favicon.ico",
+      "bytes": 3576
+    },
+    {
+      "path": "02-icons/web/light/favicon.svg",
+      "bytes": 707
+    },
+    {
+      "path": "02-icons/web/light/icon-192.png",
+      "bytes": 4506
+    },
+    {
+      "path": "02-icons/web/light/icon-192.svg",
+      "bytes": 813
+    },
+    {
+      "path": "02-icons/web/light/icon-512.png",
+      "bytes": 13811
+    },
+    {
+      "path": "02-icons/web/light/icon-512.svg",
+      "bytes": 813
+    },
+    {
+      "path": "02-icons/web/light/maskable-192.png",
+      "bytes": 3664
+    },
+    {
+      "path": "02-icons/web/light/maskable-192.svg",
+      "bytes": 817
+    },
+    {
+      "path": "02-icons/web/light/maskable-512.png",
+      "bytes": 11516
+    },
+    {
+      "path": "02-icons/web/light/maskable-512.svg",
+      "bytes": 817
+    },
+    {
+      "path": "02-icons/web/light/site.webmanifest",
+      "bytes": 701
+    },
+    {
+      "path": "02-icons/web/safari-pinned-tab.svg",
+      "bytes": 646
+    },
+    {
+      "path": "02-icons/web/theme-sync.js",
+      "bytes": 1523
+    },
+    {
+      "path": "03-social/dark/avatar-1024.png",
+      "bytes": 24104
+    },
+    {
+      "path": "03-social/dark/avatar-400.png",
+      "bytes": 7283
+    },
+    {
+      "path": "03-social/dark/avatar-800.png",
+      "bytes": 17586
+    },
+    {
+      "path": "03-social/dark/avatar.svg",
+      "bytes": 811
+    },
+    {
+      "path": "03-social/dark/banner-1500x500.png",
+      "bytes": 42110
+    },
+    {
+      "path": "03-social/dark/banner.svg",
+      "bytes": 10940
+    },
+    {
+      "path": "03-social/dark/social-card-1200x630.png",
+      "bytes": 39611
+    },
+    {
+      "path": "03-social/dark/social-card.svg",
+      "bytes": 10943
+    },
+    {
+      "path": "03-social/light/avatar-1024.png",
+      "bytes": 30158
+    },
+    {
+      "path": "03-social/light/avatar-400.png",
+      "bytes": 8572
+    },
+    {
+      "path": "03-social/light/avatar-800.png",
+      "bytes": 21259
+    },
+    {
+      "path": "03-social/light/avatar.svg",
+      "bytes": 811
+    },
+    {
+      "path": "03-social/light/banner-1500x500.png",
+      "bytes": 42657
+    },
+    {
+      "path": "03-social/light/banner.svg",
+      "bytes": 10940
+    },
+    {
+      "path": "03-social/light/social-card-1200x630.png",
+      "bytes": 39593
+    },
+    {
+      "path": "03-social/light/social-card.svg",
+      "bytes": 10943
+    },
+    {
+      "path": "04-brand/brand.css",
+      "bytes": 1436
+    },
+    {
+      "path": "04-brand/pattern-dark.png",
+      "bytes": 23287
+    },
+    {
+      "path": "04-brand/pattern-dark.svg",
+      "bytes": 707
+    },
+    {
+      "path": "04-brand/pattern-light.png",
+      "bytes": 21015
+    },
+    {
+      "path": "04-brand/pattern-light.svg",
+      "bytes": 707
+    },
+    {
+      "path": "04-brand/tokens.json",
+      "bytes": 1038
+    },
+    {
+      "path": "05-guidelines/brand-guidelines.md",
+      "bytes": 6157
+    },
+    {
+      "path": "05-guidelines/brand-overview.png",
+      "bytes": 161276
+    },
+    {
+      "path": "05-guidelines/brand-overview.svg",
+      "bytes": 292345
+    },
+    {
+      "path": "05-guidelines/browser-verification.json",
+      "bytes": 1784
+    },
+    {
+      "path": "05-guidelines/qa-report.md",
+      "bytes": 4452
+    },
+    {
+      "path": "05-guidelines/size-and-crop-checks.png",
+      "bytes": 77336
+    },
+    {
+      "path": "05-guidelines/verification.json",
+      "bytes": 2331
+    },
+    {
+      "path": "06-typography/AdwaitaSans-Regular.ttf",
+      "bytes": 879796
+    },
+    {
+      "path": "06-typography/OFL.txt",
+      "bytes": 4554
+    },
+    {
+      "path": "README.md",
+      "bytes": 5785
+    },
+    {
+      "path": "tools/build.py",
+      "bytes": 19058
+    },
+    {
+      "path": "tools/check-browser.py",
+      "bytes": 5049
+    },
+    {
+      "path": "tools/package.py",
+      "bytes": 1247
+    },
+    {
+      "path": "tools/verify.py",
+      "bytes": 6246
+    }
+  ]
+}

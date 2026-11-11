@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "PNG integrity",
+      "status": "PASS",
+      "evidence": "Decoded 140 PNGs successfully."
+    },
+    {
+      "name": "SVG structure",
+      "status": "PASS",
+      "evidence": "Parsed 49 generated SVGs; titled, outlined, no embedded rasters, scripts or filters."
+    },
+    {
+      "name": "Transparent masters",
+      "status": "PASS",
+      "evidence": "Symbol, horizontal, wordmark and stacked PNGs retain transparent backgrounds in both themes."
+    },
+    {
+      "name": "Theme geometry",
+      "status": "PASS",
+      "evidence": "Light/dark master pairs have identical alpha geometry, with inverse foreground colors."
+    },
+    {
+      "name": "Desktop icon containers",
+      "status": "PASS",
+      "evidence": "Both ICO themes decode at every declared size; 16/24/32px Windows frames use the exact small-cut artwork. Both ICNS files decode."
+    },
+    {
+      "name": "iOS catalogs",
+      "status": "PASS",
+      "evidence": "Both 18-slot AppIcon catalogs resolve; all images have correct dimensions and no alpha channel."
+    },
+    {
+      "name": "PWA and avatar safe zones",
+      "status": "PASS",
+      "evidence": "All manifest PNG paths/dimensions resolve. Maskable artwork fits the central 80%-diameter circle; avatars fit a circular crop."
+    },
+    {
+      "name": "Android resources",
+      "status": "PASS",
+      "evidence": "Parsed 8 resource XMLs; day/night colors, API 26 adaptive and API 33 monochrome variants present. Not compiled with the Android SDK."
+    },
+    {
+      "name": "Text contrast",
+      "status": "PASS",
+      "evidence": "Every supplied foreground/muted text pair on its background/surface exceeds 4.5:1. Decorative borders are excluded."
+    }
+  ],
+  "contrastRatios": {
+    "light: foreground / background": 21.0,
+    "light: foreground / surface": 18.93,
+    "light: muted / background": 7.46,
+    "light: muted / surface": 6.72,
+    "dark: foreground / background": 21.0,
+    "dark: foreground / surface": 17.93,
+    "dark: muted / background": 10.59,
+    "dark: muted / surface": 9.04
+  },
+  "limits": [
+    "No physical-device install tests or Android/Xcode builds.",
+    "No print proof or ICC/spot-color conversion.",
+    "Theme SVG browser behavior is checked separately from file-integrity validation."
+  ]
+}
