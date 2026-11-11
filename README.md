@@ -1,82 +1,94 @@
 # mrboxs brand kit
 
-Kit identitas digital dari `mrboxs-logo.svg` milik mrboxs. Bentuk simbol asli dipertahankan. Ekspor baru membersihkan metadata Illustrator, memisahkan simbol dari latar, dan menambahkan wordmark serta varian untuk beragam ukuran.
+**English** | [Bahasa Indonesia](README.id.md)
 
-Mulai dari `05-guidelines/brand-overview.png` untuk lihat keseluruhan kit, lalu baca `05-guidelines/brand-guidelines.md` untuk aturan pemakaian.
+A digital identity kit built from the original `mrboxs-logo.svg` supplied by mrboxs. The original symbol is preserved. The exports remove Illustrator metadata, separate the symbol from its background, and add a wordmark and variants for different sizes and uses.
 
-![Preview brand kit mrboxs](05-guidelines/brand-overview.png)
+[Download the latest release](https://github.com/mrboxs/mrboxs-brandkit/releases/latest)
 
-## Pilih file
+Start with the [brand overview](05-guidelines/brand-overview.png) to see the kit. Detailed [brand guidelines](05-guidelines/brand-guidelines.md) and the [QA report](05-guidelines/qa-report.md) are available in Indonesian; this README covers asset selection, installation, and usage in English.
 
-| Kebutuhan | File / folder |
+![mrboxs brand kit preview](05-guidelines/brand-overview.png)
+
+## Choose an asset
+
+| Use | File / directory |
 |---|---|
-| Logo di latar terang | `01-logos/light/` (gambar hitam, transparan) |
-| Logo di latar gelap | `01-logos/dark/` (gambar putih, transparan) |
-| Logo mengikuti tema OS | `01-logos/adaptive/` |
-| Logo mengikuti warna CSS | `01-logos/inline/` (tempel SVG langsung ke HTML/JSX) |
-| Logo di navbar | `mrboxs-horizontal.svg` |
-| Nama saja | `mrboxs-wordmark.svg` |
-| Susunan vertikal | `mrboxs-stacked.svg` |
-| Badge seperti logo asli | `mrboxs-badge.svg` |
-| Favicon + PWA | `02-icons/web/` |
-| Ikon aplikasi square/rounded | `02-icons/app/light/` atau `dark/` |
+| Logo on a light background | `01-logos/light/` (black artwork, transparent background) |
+| Logo on a dark background | `01-logos/dark/` (white artwork, transparent background) |
+| Logo that follows the system theme | `01-logos/adaptive/` |
+| Logo that inherits a CSS color | `01-logos/inline/` (embed the SVG directly in HTML/JSX) |
+| Navigation bar logo | `mrboxs-horizontal.svg` |
+| Name only | `mrboxs-wordmark.svg` |
+| Vertical layout | `mrboxs-stacked.svg` |
+| Badge matching the original logo | `mrboxs-badge.svg` |
+| Favicon and PWA icons | `02-icons/web/` |
+| Square and rounded app icons | `02-icons/app/light/` or `dark/` |
 | Windows / macOS | `mrboxs-windows.ico` / `mrboxs-macos.icns` |
-| iOS | `02-icons/app/ios/<tema>/AppIcon.appiconset/` |
-| Android + themed icon | `02-icons/app/android/res/` |
-| Avatar dan social card | `03-social/<tema>/` |
-| CSS, token warna, pola | `04-brand/` |
-| Panduan dan hasil pengecekan | `05-guidelines/` |
-| Font + lisensi OFL | `06-typography/` |
-| Sumber asli | `00-source/mrboxs-logo-original.svg` |
+| iOS | `02-icons/app/ios/<theme>/AppIcon.appiconset/` |
+| Android, including themed icons | `02-icons/app/android/res/` |
+| Avatars and social cards | `03-social/<theme>/` |
+| CSS, color tokens, and patterns | `04-brand/` |
+| Guidelines and verification results | `05-guidelines/` |
+| Font and OFL license | `06-typography/` |
+| Original source | `00-source/mrboxs-logo-original.svg` |
 
-`light` dan `dark` menunjukkan **latar tempat aset dipakai**. Logo `light` berwarna hitam untuk latar terang, logo `dark` berwarna putih untuk latar gelap. Ikon, avatar, dan social card sudah punya latar masing-masing.
+`light` and `dark` describe the **background the asset is intended for**. Light-theme logos use black artwork; dark-theme logos use white artwork. Icons, avatars, and social cards include their own backgrounds.
 
-## Pasang di website
+The full symbol retains the original geometry. The small-size variant removes the middle upper chevron and enlarges the diamond for clearer rendering at 16–32 px. Use the full symbol at larger sizes.
 
-Salin direktori berikut ke direktori public proyek:
+## Website installation
+
+Copy these directories into your project's public directory:
 
 ```text
-02-icons/web/     -> public/brand/icons/
-01-logos/        -> public/brand/logos/
-03-social/       -> public/brand/social/
-04-brand/        -> public/brand/system/
-06-typography/   -> public/brand/typography/
+02-icons/web/    -> public/brand/icons/
+01-logos/       -> public/brand/logos/
+03-social/      -> public/brand/social/
+04-brand/       -> public/brand/system/
+06-typography/  -> public/brand/typography/
 ```
 
-1. Tempel `02-icons/web/head-snippet.html` ke `<head>`.
-2. Muat `/brand/system/brand.css` kalau mau memakai token dan font.
-3. Pakai `01-logos/logo-snippet.html`, atau tempel SVG `currentcolor` sebagai inline SVG.
-4. Untuk tema manual, set `<html data-theme="light">` atau `dark`. Hapus atributnya atau isi `system` untuk mengikuti OS. `theme-sync.js` menyelaraskan favicon dan warna browser dengan atribut ini.
-5. Pakai social card 1200×630 sebagai `og:image` dan `twitter:image`. Isi URL HTTPS absolut dari domain lu sendiri setelah aset diunggah. Pakai `twitter:card=summary_large_image`, `og:image:width=1200`, `og:image:height=630`, dan alt `Logo mrboxs`.
+1. Add [`02-icons/web/head-snippet.html`](02-icons/web/head-snippet.html) to your page's `<head>`.
+2. Load `/brand/system/brand.css` if you want to use the supplied tokens and font.
+3. Use [`01-logos/logo-snippet.html`](01-logos/logo-snippet.html), or embed a `currentcolor` SVG directly as inline SVG.
+4. For a manual theme, set `<html data-theme="light">` or `<html data-theme="dark">`. Remove the attribute or set it to `system` to follow the operating system. The optional `theme-sync.js` adapter synchronizes the favicon and browser chrome color with this attribute.
+5. Use the 1200×630 social card for `og:image` and `twitter:image`. Set an absolute HTTPS URL on your own domain after uploading the image. Use `twitter:card=summary_large_image`, `og:image:width=1200`, `og:image:height=630`, and image alt text such as `mrboxs logo`.
 
-Path snippet memakai `/brand/`. Jika situs di subpath, sesuaikan prefix. Manifest memakai URL ikon relatif terhadap file manifest, sementara `id`, `start_url`, dan `scope` default `/`: ubah ketiganya mengikuti aplikasi tujuan sebelum deploy. Kit aset ini belum menyertakan service worker atau aplikasi PWA.
+The snippets use `/brand/` paths. Adjust this prefix if your site is deployed under a subpath. Manifest icon URLs are relative to the manifest file, while `id`, `start_url`, and `scope` default to `/`; update all three for your application before deployment. This asset kit does not include a service worker or a PWA application.
 
-File `adaptive/*-auto.svg` dan favicon otomatis membaca **tema OS**, bukan otomatis membaca tema manual dalam aplikasi. Untuk tema manual, pakai CSS dari kit, inline SVG `currentColor`, atau pasangan file light/dark. `currentColor` dalam SVG eksternal yang dipasang lewat `<img>` tidak mewarisi warna elemen induknya.
+### System and manual themes
 
-Manifest di snippet memilih ikon dark secara konsisten untuk instalasi. Tersedia manifest light sebagai alternatif. Ikon PWA yang sudah terpasang, Apple Touch Icon, dan ikon desktop biasa tidak dijamin berubah saat tema berganti; pergantian favicon hanya berlaku di tab browser. Pilih versi instalasi yang lu mau sebelum rilis.
+The `adaptive/*-auto.svg` files and automatic favicon respond to **system theme preferences**. They do not automatically read your application's manual theme setting. For manual themes, use the supplied CSS, inline SVG with `currentColor`, or the light/dark asset pair. An external SVG loaded through `<img>` does not inherit `currentColor` from its parent element.
 
-## Aplikasi native
+The head snippet selects dark icons consistently for installation. A light manifest is also available. Installed PWA icons, Apple Touch Icons, and ordinary desktop icons are not guaranteed to change when the theme changes; favicon switching applies to browser tabs. Choose your preferred installation variant before release.
 
-- **iOS:** pilih satu `AppIcon.appiconset` light/dark, lalu masukkan ke asset catalog Xcode. Semua PNG iOS opaque dan persegi; sistem yang membuat mask sudut. Kedua set adalah alternatif yang dipilih saat build. Ini bukan satu asset catalog yang otomatis berganti dengan tema iOS.
-- **Android:** gabungkan `android/res/` ke resources aplikasi dan set `android:icon="@mipmap/ic_launcher"`, `android:roundIcon="@mipmap/ic_launcher_round"` pada application manifest. Periksa konflik nama resource sebelum merge. Adaptive icon tersedia untuk API 26+, monochrome untuk API 33+, fallback raster untuk versi lama. Warna day/night disediakan; launcher dapat menyimpan cache atau memakai warna wallpaper untuk themed icon.
-- **Windows:** gunakan `.ico` multiukuran. Pilih light atau dark saat packaging.
-- **macOS:** gunakan `.icns`; file tersedia dalam kedua tema sebagai alternatif packaging, bukan pergantian otomatis.
-- **App store / launcher:** gunakan PNG square 1024 tanpa mask untuk sistem yang memberi mask sendiri. Rounded PNG cocok untuk presentasi atau tempat yang tidak memberi mask.
+## Native applications
 
-## Bangun ulang
+- **iOS:** choose one light/dark `AppIcon.appiconset` and add it to your Xcode asset catalog. All iOS PNGs are opaque and square; the system applies the corner mask. These are separate alternatives selected at build time, rather than a single catalog that automatically changes with the iOS theme.
+- **Android:** merge `android/res/` into your application's resources and set `android:icon="@mipmap/ic_launcher"` and `android:roundIcon="@mipmap/ic_launcher_round"` in the application manifest. Check for resource name conflicts before merging. Adaptive icons are provided for API 26+, monochrome icons for API 33+, and raster fallbacks for older versions. Day/night colors are included; launchers may cache icons or apply wallpaper colors to themed icons.
+- **Windows:** use the multi-resolution `.ico` file. Select light or dark when packaging.
+- **macOS:** use the `.icns` file. Both themes are available as packaging alternatives; they do not switch automatically.
+- **App stores and launchers:** use the unmasked 1024 px square PNG when the platform applies its own mask. Rounded PNGs are suitable for presentations and placements without a platform mask.
 
-Dependensi: Python 3, `fonttools`, `Pillow`, dan `rsvg-convert` (librsvg). Tidak butuh browser atau koneksi jaringan saat build setelah dependensi tersedia.
+## Rebuild the kit
+
+Requirements: Python 3, `fonttools`, `Pillow`, and `rsvg-convert` (librsvg). Once dependencies are installed, the asset build does not require a browser or network access.
 
 ```sh
 python3 -m venv .venv
 .venv/bin/pip install fonttools pillow
 .venv/bin/python tools/build.py
 .venv/bin/python tools/verify.py
-# Opsional: butuh Chromium, menguji perpindahan tema di browser tanpa server.
+# Optional: requires Chromium; checks browser theme switching without a server.
 .venv/bin/python tools/check-browser.py
 .venv/bin/python tools/package.py
 ```
 
-Jalankan dari dalam folder kit. Script mencari master dan font relatif terhadap lokasinya sendiri, jadi tidak tergantung font terpasang di komputer. `tools/build.py` memperbarui aset hasil generate; README, panduan, CSS, dan snippet tetap diedit sebagai file sumber. `tools/package.py` memperbarui inventaris, checksum, dan ZIP setelah verifikasi.
+Run these commands from the kit directory. The scripts locate the source artwork and font relative to their own paths, so they do not depend on locally installed fonts. `tools/build.py` updates generated assets; READMEs, guidelines, CSS, and snippets are maintained as source files. After verification, `tools/package.py` refreshes the inventory, checksums, and ZIP archive.
 
-Font Adwaita Sans didistribusikan sesuai SIL OFL 1.1; lisensi ada di `06-typography/OFL.txt`. Wordmark sudah berupa path, jadi tidak perlu font terpasang untuk membuka SVG. Kit tidak mengubah status kepemilikan atau lisensi logo asli lu.
+## Verification and rights
+
+The kit includes file-integrity checks, transparency checks, icon-container checks, safe-zone checks, text contrast calculations, and Chromium theme tests. See [`verification.json`](05-guidelines/verification.json) and [`browser-verification.json`](05-guidelines/browser-verification.json) for results. Native icons have not been installed on physical devices, and no Xcode/Android SDK builds or print proofs were performed.
+
+Adwaita Sans is distributed under SIL OFL 1.1; see [`06-typography/OFL.txt`](06-typography/OFL.txt). The wordmark is outlined, so opening the SVG does not require an installed font. This kit does not change ownership or licensing of the original mrboxs logo.
